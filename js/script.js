@@ -1,15 +1,29 @@
 import {Button} from './button.js';
 import {Keyboard} from './keyboard.js';
 
+let keyboard = new Keyboard();
 
 document.addEventListener('keydown', (event) => {
-    let btn = new Button(event.key);
-    //console.log(b);
+    let el = document.querySelector("[id='"+event.key+"']");
+    if (el !== null) {
+        el.style.backgroundColor = 'yellow';
+    }
+    console.log(event.key);
+    let btn = keyboard.getButtonByID(+event.key);
+    if (btn === null) {
+        console.log('Go to hell');
+    }
     btn.print();
 });
 
+document.addEventListener('keyup', (event) => {
+    let el = document.querySelector("[id='"+event.key+"']");
+    if (el !== null) {
+        el.style.backgroundColor = 'green';
+    }
+});
+
 window.addEventListener('load', (event) => {
-    let keyboard = new Keyboard();
     let buttons = keyboard.getButtons();
     for (let i = 0; i < buttons.length; i++) {
         let btn = buttons[i];
