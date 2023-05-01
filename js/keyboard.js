@@ -66,70 +66,70 @@
 //     "ArrowRight"
 // ];
 
-const keyArr = [
-    {'key':"`", 'printable':true},
-    {'key':"1", 'printable':true},
-    {'key':"2", 'printable':true},
-    {'key':"3", 'printable':true},
-    {'key':"4", 'printable':true},
-    {'key':"5", 'printable':true},
-    {'key':"6", 'printable':true},
-    {'key':"7", 'printable':true},
-    {'key':"8", 'printable':true},
-    {'key':"9", 'printable':true},
-    {'key':"0", 'printable':true},
-    {'key':"-", 'printable':true},
-    {'key':"=", 'printable':true},
-    {'key':"Backspace", 'printable':false},
-    {'key':"Tab", 'printable':false},
-    {'key':"q", 'printable':true},
-    {'key':"w", 'printable':true},
-    {'key':"e", 'printable':true},
-    {'key':"r", 'printable':true},
-    {'key':"t", 'printable':true},
-    {'key':"y", 'printable':true},
-    {'key':"u", 'printable':true},
-    {'key':"i", 'printable':true},
-    {'key':"o", 'printable':true},
-    {'key':"p", 'printable':true},
-    {'key':"[", 'printable':true},
-    {'key':"]", 'printable':true},
-    {'key':"\\", 'printable':true},
-    {'key':"CapsLock", 'printable':false},
-    {'key':"a", 'printable':true},
-    {'key':"s", 'printable':true},
-    {'key':"d", 'printable':true},
-    {'key':"f", 'printable':true},
-    {'key':"g", 'printable':true},
-    {'key':"h", 'printable':true},
-    {'key':"j", 'printable':true},
-    {'key':"k", 'printable':true},
-    {'key':"l", 'printable':true},
-    {'key':";", 'printable':true},
-    {'key':"'", 'printable':true},
-    {'key':"Enter", 'printable':false},
-    {'key':"Shift", 'printable':false},
-    {'key':"z", 'printable':true},
-    {'key':"x", 'printable':true},
-    {'key':"c", 'printable':true},
-    {'key':"v", 'printable':true},
-    {'key':"b", 'printable':true},
-    {'key':"n", 'printable':true},
-    {'key':"m", 'printable':true},
-    {'key':",", 'printable':true},
-    {'key':".", 'printable':true},
-    {'key':"/", 'printable':true},
-    {'key':"Shift", 'printable':false},
-    {'key':"Control", 'printable':false},
-    {'key':"Meta",'printable':false},
-    {'key':"Alt",'printable':false},
-    {'key':" ",'printable':true},
-    {'key':"Alt",'printable':false},
-    {'key':"Control",'printable':false},
-    {'key':"ArrowLeft",'printable':false},
-    {'key':"ArrowUp",'printable':false},
-    {'key':"ArrowDown",'printable':false},
-    {'key':"ArrowRight",'printable':false}
+const keyArrNoCaps = [
+    {'key':"`", 'keyCaps':"`", 'printable':true},
+    {'key':"1", 'keyCaps':"1", 'printable':true},
+    {'key':"2", 'keyCaps':"2", 'printable':true},
+    {'key':"3", 'keyCaps':"3", 'printable':true},
+    {'key':"4", 'keyCaps':"4", 'printable':true},
+    {'key':"5", 'keyCaps':"5", 'printable':true},
+    {'key':"6", 'keyCaps':"6", 'printable':true},
+    {'key':"7", 'keyCaps':"7", 'printable':true},
+    {'key':"8", 'keyCaps':"8", 'printable':true},
+    {'key':"9", 'keyCaps':"9", 'printable':true},
+    {'key':"0", 'keyCaps':"0", 'printable':true},
+    {'key':"-", 'keyCaps':"-", 'printable':true},
+    {'key':"=", 'keyCaps':"=", 'printable':true},
+    {'key':"Backspace", 'keyCaps':"Backspace", 'printable':false},
+    {'key':"Tab", 'keyCaps':"Tab", 'printable':false},
+    {'key':"q", 'keyCaps':"Q", 'printable':true},
+    {'key':"w", 'keyCaps':"W", 'printable':true},
+    {'key':"e", 'keyCaps':"E", 'printable':true},
+    {'key':"r", 'keyCaps':"R", 'printable':true},
+    {'key':"t", 'keyCaps':"T", 'printable':true},
+    {'key':"y", 'keyCaps':"Y", 'printable':true},
+    {'key':"u", 'keyCaps':"U", 'printable':true},
+    {'key':"i", 'keyCaps':"I", 'printable':true},
+    {'key':"o", 'keyCaps':"O", 'printable':true},
+    {'key':"p", 'keyCaps':"P", 'printable':true},
+    {'key':"[", 'keyCaps':"[", 'printable':true},
+    {'key':"]", 'keyCaps':"]", 'printable':true},
+    {'key':"\\", 'keyCaps':"\\", 'printable':true},
+    {'key':"CapsLock", 'keyCaps':"CapsLock", 'printable':false},
+    {'key':"a", 'keyCaps':"A", 'printable':true},
+    {'key':"s", 'keyCaps':"S", 'printable':true},
+    {'key':"d", 'keyCaps':"D", 'printable':true},
+    {'key':"f", 'keyCaps':"F", 'printable':true},
+    {'key':"g", 'keyCaps':"G", 'printable':true},
+    {'key':"h", 'keyCaps':"H", 'printable':true},
+    {'key':"j", 'keyCaps':"J", 'printable':true},
+    {'key':"k", 'keyCaps':"K", 'printable':true},
+    {'key':"l", 'keyCaps':"L", 'printable':true},
+    {'key':";", 'keyCaps':";", 'printable':true},
+    {'key':"'", 'keyCaps':"'", 'printable':true},
+    {'key':"Enter", 'keyCaps':"Enter", 'printable':false},
+    {'key':"Shift", 'keyCaps':"Shift", 'printable':false},
+    {'key':"z", 'keyCaps':"Z", 'printable':true},
+    {'key':"x", 'keyCaps':"X", 'printable':true},
+    {'key':"c", 'keyCaps':"C", 'printable':true},
+    {'key':"v", 'keyCaps':"V", 'printable':true},
+    {'key':"b", 'keyCaps':"B", 'printable':true},
+    {'key':"n", 'keyCaps':"N", 'printable':true},
+    {'key':"m", 'keyCaps':"M", 'printable':true},
+    {'key':",", 'keyCaps':",", 'printable':true},
+    {'key':".", 'keyCaps':".", 'printable':true},
+    {'key':"/", 'keyCaps':"/", 'printable':true},
+    {'key':"Shift", 'keyCaps':"Shift", 'printable':false},
+    {'key':"Control", 'keyCaps':"Control", 'printable':false},
+    {'key':"Meta",'keyCaps':"Meta", 'printable':false},
+    {'key':"Alt",'keyCaps':"Alt", 'printable':false},
+    {'key':" ",'keyCaps':" ", 'printable':true},
+    {'key':"Alt",'keyCaps':"Alt", 'printable':false},
+    {'key':"Control",'keyCaps':"Control", 'printable':false},
+    {'key':"ArrowLeft",'keyCaps':"ArrowLeft", 'printable':false},
+    {'key':"ArrowUp",'keyCaps':"ArrowUp", 'printable':false},
+    {'key':"ArrowDown",'keyCaps':"ArrowDown", 'printable':false},
+    {'key':"ArrowRight",'keyCaps':"ArrowRight", 'printable':false}
 ];
 import {Button} from './button.js';
 
@@ -137,21 +137,40 @@ export class Keyboard {
     //lang = 'en';
     constructor() {
         this.btnArray = [];
+        this.btnArrayCaps = [];
+        this.caps = false;
         this.createButtons();
     }
     createButtons() {
-        console.log('keyArr = ' + keyArr);
-        for (let i=0; i<keyArr.length; i++){
-            this.btnArray.push(new Button(keyArr[i].key, keyArr[i].printable));
-            // console.log('btn = ' + this.btnArray[i].key);
+        // console.log('keyArr = ' + keyArrNoCaps);
+        for (let i=0; i<keyArrNoCaps.length; i++){
+            this.btnArray.push(new Button(keyArrNoCaps[i].key, keyArrNoCaps[i].printable));
+            this.btnArrayCaps.push(new Button(keyArrNoCaps[i].keyCaps, keyArrNoCaps[i].printable));
         }
     }
     getButtons() {
-        return this.btnArray;
+        if(this.isCaps() === true){
+            return this.btnArrayCaps;
+        } else {
+            return this.btnArray;
+        }
     }
     getButtonByID(id) {
-        console.log('id = ' + id);
+        // console.log('id = ' + id);
         let res = this.btnArray.filter(key => key.value === id);
-        return res[0];
+        let resCaps = this.btnArrayCaps.filter(key => key.value === id);
+        if(this.isCaps() === true){
+            return resCaps[0];
+        } else {
+            return res[0];
+        }
+    }
+
+    toggleCaps(){
+        this.caps = !this.caps;
+    }
+
+    isCaps(){
+        return this.caps;
     }
 }

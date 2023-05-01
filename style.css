@@ -23,6 +23,10 @@ body {
     background: #F1CDB3;
 
 }
+
+.caps_active {
+    background: #bcf1b3;
+}
 /* .button:hover { */
     /* background: #ce8652; */
 /*  */
@@ -32,7 +36,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 800px;
+    width: 900px;
     margin: 0 auto;
 }
 

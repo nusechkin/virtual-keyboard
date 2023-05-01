@@ -9,10 +9,17 @@ document.addEventListener('keydown', (event) => {
         el.classList.add("active");
     }
     console.log(event.key);
-    let btn = keyboard.getButtonByID(event.key);
-    if (btn === null) {
-        console.log('Go to hell');
+
+    if(event.key === 'CapsLock'){
+        console.log("change kaps");
+        keyboard.toggleCaps();
+        reDrawKeyboard();
     }
+
+    let btn = keyboard.getButtonByID(event.key);
+    // if (btn === null) {
+        // console.log('Go to hell');
+    // }
     btn.printToArea('output');
 });
 
@@ -33,6 +40,12 @@ window.addEventListener('load', (event) => {
     drawKeyboard();
 });
 
+function reDrawKeyboard(){
+    let cont = document.querySelector('.container');
+    cont.remove();
+    drawKeyboard();
+}
+
 function drawKeyboard(){
     const container = document.createElement('div');
     container.classList.add('container');
@@ -44,6 +57,11 @@ function drawKeyboard(){
         btnUI.classList.add('button');
         btnUI.id = btn.value;
         btnUI.innerHTML = btn.value;
+        if(keyboard.isCaps() && btn.value === 'CapsLock'){
+            btnUI.classList.add('caps_active');
+        } else {
+            // btnUI.classList.add('button');
+        }
         btnUI.addEventListener('click', (event) => {
             btn.printToArea('output');
         })
