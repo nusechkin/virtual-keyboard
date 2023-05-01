@@ -15,7 +15,7 @@ export class Button {
         } else {
             if (this.value === 'Backspace') {
                 let tmp = el.innerHTML;
-                el.innerHTML = tmp.substring(0, tmp.length-1);
+                el.innerHTML = tmp.substring(0, tmp.length - 1);
             } else if (this.value === 'Tab') {
                 el.innerHTML += "\t";
             } else if (this.value === 'Enter') {
