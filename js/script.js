@@ -6,24 +6,37 @@ let keyboard = new Keyboard();
 document.addEventListener('keydown', (event) => {
     let el = document.querySelector("[id='"+event.key+"']");
     if (el !== null) {
-        el.style.backgroundColor = 'yellow';
+        el.classList.add("active");
     }
     console.log(event.key);
-    let btn = keyboard.getButtonByID(+event.key);
+    let btn = keyboard.getButtonByID(event.key);
     if (btn === null) {
         console.log('Go to hell');
     }
-    btn.print();
+    btn.printToArea('output');
 });
 
 document.addEventListener('keyup', (event) => {
     let el = document.querySelector("[id='"+event.key+"']");
     if (el !== null) {
-        el.style.backgroundColor = 'green';
+        el.classList.remove("active");
     }
 });
 
 window.addEventListener('load', (event) => {
+
+    const textArea = document.createElement('textarea');
+    textArea.classList.add("textarea");
+    textArea.id = 'output';
+    document.body.append(textArea);
+
+    drawKeyboard();
+});
+
+function drawKeyboard(){
+    const container = document.createElement('div');
+    container.classList.add('container');
+    document.body.append(container);
     let buttons = keyboard.getButtons();
     for (let i = 0; i < buttons.length; i++) {
         let btn = buttons[i];
@@ -32,9 +45,9 @@ window.addEventListener('load', (event) => {
         btnUI.id = btn.value;
         btnUI.innerHTML = btn.value;
         btnUI.addEventListener('click', (event) => {
-            btn.print();
+            btn.printToArea('output');
         })
-        document.body.append(btnUI);
+        container.append(btnUI);
     }
 
-});
+}
