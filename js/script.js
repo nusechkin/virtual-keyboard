@@ -63,6 +63,11 @@ function drawKeyboard(){
             // btnUI.classList.add('button');
         }
         btnUI.addEventListener('click', (event) => {
+            if(btn.value === 'CapsLock'){
+                console.log("change kaps");
+                keyboard.toggleCaps();
+                reDrawKeyboard();
+            }
             btn.printToArea('output');
         })
         container.append(btnUI);
