@@ -1,0 +1,50 @@
+.button {
+
+    padding: 20px;
+    background: #cfcfcf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    transition-property: background;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.button:active,
+.active {
+    background: #F1CDB3;
+
+}
+
+.caps_active {
+    background: #bcf1b3;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+.textarea {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+    min-height: 200px;
+    margin: 0 auto;
+}
+
+.details {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
