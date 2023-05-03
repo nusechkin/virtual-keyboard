@@ -68,7 +68,6 @@ function drawKeyboard() {
         }
         btnUI.addEventListener('click', (event) => {
             if (btn.value === 'CapsLock') {
-                console.log("change kaps");
                 keyboard.toggleCaps();
                 reDrawKeyboard();
             }
